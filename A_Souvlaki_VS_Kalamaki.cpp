@@ -10,13 +10,22 @@ const int MOD = 1000000007;
 void solve()
 {
     ll n;
-    int m;
     cin >> n;
     vector<ll> a(n);
     for (ll i = 0; i < n; i++)
     {
         cin >> a[i];
     }
+    sort(a.begin(), a.end());
+
+    for (int i = 1; i < n-1; i+=2)
+    {
+        if(a[i]!=a[i+1]){
+            no;
+            return;
+        }
+    }
+    yes;
 }
 
 int main()

@@ -10,12 +10,14 @@ const int MOD = 1000000007;
 void solve()
 {
     ll n;
-    int m;
     cin >> n;
-    vector<ll> a(n);
-    for (ll i = 0; i < n; i++)
+    if(n%3==0){
+        cout << 0 << endl;
+    }
+    else
     {
-        cin >> a[i];
+        int x = (n + 2) / 3;
+        cout << x * 3 - n << endl;
     }
 }
 

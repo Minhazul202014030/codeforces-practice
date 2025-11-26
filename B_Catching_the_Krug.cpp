@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define fastIO ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
-#define endl "\n" 
+#define endl "\n"
 #define yes cout << "YES\n"
 #define no cout << "NO\n"
 typedef long long int ll;
@@ -9,14 +9,29 @@ const int MOD = 1000000007;
 
 void solve()
 {
-    ll n;
-    int m;
-    cin >> n;
-    vector<ll> a(n);
-    for (ll i = 0; i < n; i++)
+    ll n, rk, ck, rd, cd;
+    cin >> n >> rk >> ck >> rd >> cd;
+
+    ll ans = 0;
+
+    if (rk > rd)
     {
-        cin >> a[i];
+        ans = max(ans, n - rd);
     }
+    else if (rk < rd)
+    {
+        ans = max(ans, rd);
+    }
+    if (ck > cd)
+    {
+        ans = max(ans, n - cd);
+    }
+    else if (ck < cd)
+    {
+        ans = max(ans, cd);
+    }
+
+    cout << ans << endl;
 }
 
 int main()

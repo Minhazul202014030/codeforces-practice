@@ -10,15 +10,10 @@ const int MOD = 1000000007;
 void solve()
 {
     ll n;
-    int m;
     cin >> n;
-    vector<ll> a(n);
-    for (ll i = 0; i < n; i++)
-    {
-        cin >> a[i];
-    }
+    cout << 2 * n - 2 << endl; 
 }
-
+ 
 int main()
 {
     fastIO;

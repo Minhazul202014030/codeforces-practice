@@ -9,14 +9,26 @@ const int MOD = 1000000007;
 
 void solve()
 {
-    ll n;
-    int m;
-    cin >> n;
-    vector<ll> a(n);
-    for (ll i = 0; i < n; i++)
-    {
-        cin >> a[i];
+    ll r, x, d, n;
+    cin >> r >> x >> d >> n;
+    string s;
+    cin >> s;
+
+    ll cnt = 0;
+
+    int ans = n;
+
+    if(s[0]=='2' && r>=2100){
+        ll i = 0;
+        ll cnt = 0;
+        while(s[i]!='1' && i<n){
+            cnt++;
+            i++;
+        }
+        ans = n - cnt;
     }
+
+    cout << ans << endl;
 }
 
 int main()

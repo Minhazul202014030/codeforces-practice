@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define fastIO ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
+#define f(i, n) for (ll i = 0; i < n; i++)
+#define ia(a, n) \
+    f(i, n) cin >> a[i]
+#define iv(v, n) \
+    f(i, n) cin >> v[i]
 #define endl "\n" 
 #define yes cout << "YES\n"
 #define no cout << "NO\n"

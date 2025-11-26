@@ -10,13 +10,16 @@ const int MOD = 1000000007;
 void solve()
 {
     ll n;
-    int m;
     cin >> n;
     vector<ll> a(n);
+    set<int> st;
     for (ll i = 0; i < n; i++)
     {
-        cin >> a[i];
+        int x;
+        cin >> x;
+        st.insert(x);
     }
+    cout << 2 * (st.size() - 1) + 1 << endl;
 }
 
 int main()
